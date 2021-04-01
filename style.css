@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+section{
+    position: relative;
+    background:#333;
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+img{
+    position: absolute;
+    width:100%;
+    filter: grayscale(100%) blur(5px) brightness(30%);
+    
+}
+.loginbox{
+    
+    width:30%;
+    height:50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    z-index: 3;
+}
+.loginbox h2{
+    padding:10px;
+    border-bottom: 2px solid chartreuse;
+    color: white;
+    margin-bottom: 50px;
+    font-weight: 800;
+    font-size: 2.781844802342606vw;
+}
+.user{
+    position: relative;
+  
+    width:80%;
+    height:40px;
+    margin:20px;
+}
+.user label{
+    position: absolute;
+    left:3%;
+    bottom: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:silver;
+    transition: 0.3s ease;
+    pointer-events: none;
+    font-size: 1.0248901903367496vw;
+}
+.user label svg{
+    margin-right: 8px;
+}
+.user input{
+    width:100%;
+    height: 100%;
+    border:0px;
+    border-bottom: 1px solid silver;
+    background: transparent;
+    color:white;
+}
+.underline{
+    position: absolute;
+    bottom: 0%;
+    width:100%;
+    height:1px;
+    background: chartreuse;
+    transform: scale(0);
+    transition: 0.3s ease;
+}
+.user input:focus + label, .user input:valid + label{
+    transform: translateY(-100%) scale(0.8) translateX(-20%);
+    color: chartreuse;
+
+    
+}
+.user input:focus + label svg path, .user input:valid + label svg path {
+    fill:chartreuse;
+}
+.user input:focus ~ .underline, .user input:valid ~ .underline{
+    transform: scale(1);
+}
+
+
+
+.pass{
+    position: relative;
+  
+    width:80%;
+    height:40px;
+    margin:20px;
+}
+.pass label{
+    position: absolute;
+    left:3%;
+    bottom: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:silver;
+    transition: 0.3s ease;
+    pointer-events: none;
+    font-size: 1.0248901903367496vw;
+}
+.pass label svg{
+    margin-right: 8px;
+}
+.pass input{
+    width:100%;
+    height: 100%;
+    border:0px;
+    border-bottom: 1px solid silver;
+    background: transparent;
+    color:white;
+}
+
+.pass input:focus + label, .pass input:valid + label{
+    transform: translateY(-100%) scale(0.8) translateX(-20%);
+    color: chartreuse;
+
+    
+}
+.pass input:focus + label svg path, .pass input:valid + label svg path {
+    fill:chartreuse;
+}
+.pass input:focus ~ .underline, .pass input:valid ~ .underline{
+    transform: scale(1);
+}
+button{
+    background-color: rgb(127, 255, 0);
+    margin-top: 1.4641288433382138vw;
+    width:30%;
+    height:13%;
+    border:0px;
+    border-radius: 20px;
+    color:white;
+    font-size: 1.2445095168374818vw;
+    transition: 0.2s ease;
+    
+}
+button:hover{
+    width:35%;
+}
